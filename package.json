@@ -1,0 +1,16 @@
+{
+  "name": "receiptprocessor",
+  "version": "1.0.0",
+  "description": "Building a Receipt Processor API with Node.js, Express.js and MySQL to keep data persistent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anupreet Paulkar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.4.0"
+  }
+}
