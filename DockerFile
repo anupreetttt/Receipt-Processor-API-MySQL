@@ -1,0 +1,18 @@
+FROM node:14
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+ENV DB_HOST=localhost \
+    DB_USER=anupreet26 \
+    DB_PASSWORD=hello@26 \
+    DB_DATABASE=receipt_processor
+
+CMD ["npm", "start"]
